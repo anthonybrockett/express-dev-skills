@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Developer Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Skills</h1>
+    <ul>
+      <% skills.forEach(function(s) { %>
+        <li>
+            <a href="/skills/<%=  s.id %>"><%= s.skill %></a>
+             -
+            <%= s.level %> 
+        </li>
+       <% }); %> 
+    </ul>
+    <h5><a href="/">Back to Home</a></h5>
+  </body>
+</html>
