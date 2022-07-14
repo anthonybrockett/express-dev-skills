@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Developer Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= skill.skill %></h1>
-    <h3>Experience Level: <%= skill.level %></h3>
-    <h5><a href="/skills">Back to Skills</a></h5>
-    <h5><a href="/">Back to Home</a></h5>
-  </body>
-</html>
+<%- include('../partials/header') %>
+
+<h1><%= skill.skill %></h1>
+<h3>Status:  <%= skill.achieved ? 'Achieved' : 'Not Achieved ..Yet' %></h3>
+
+<br>
+
+<a href="/skills/<%= skill.id%>/edit">Edit Skill</a>
+
+<br>
+<br>
+
+<form action="/skills/<%= skill.id %>?_method=DELETE"
+  method="POST" class="delete-form">
+  <button type="submit">Delete Skill</button>
+</form>
+
+<%- include('../partials/footer') %>
