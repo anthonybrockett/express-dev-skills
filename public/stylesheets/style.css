@@ -1,10 +1,31 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #870022;
+  color: whitesmoke;
 }
 
 a {
-  color: #00B7FF;
+  color: whitesmoke;
+}
+
+a:link { 
+  text-decoration: none; 
+}
+
+
+a:visited { 
+  text-decoration: none; 
+}
+
+
+a:hover { 
+  text-decoration: underline; 
+}
+
+
+a:active { 
+  text-decoration: none; 
 }
 
 .delete-form {
@@ -12,12 +33,11 @@ a {
   margin-right: 10px;
 }
 	
-.delete-form button {
-  color: red;
-}
-	
 li {
   list-style: none;
 }
 
-
+nav {
+  background-color: #7A858A ;
+  text-align: center;
+}

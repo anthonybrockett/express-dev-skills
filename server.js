@@ -26,6 +26,7 @@ app.use(function(req, res, next) {
   // Add a time property to the res.locals object
   // The time property will then be accessible when rendering a view
   res.locals.time = new Date().toLocaleTimeString();
+  res.locals.date = new Date().getMonth().toString() + '/' + new Date().getDay().toString() + '/' + new Date().getFullYear().toString();
   next();
 });
 
