@@ -24,5 +24,8 @@ router.post('/', skillsCtrl.create)
 // Delete /skills/:id (delete functionality)
 router.delete('/:id', skillsCtrl.delete)
 
+// Put /skills/:id (update functionality)
+router.put('/:id', skillsCtrl.update)
+
 
 module.exports = router;
